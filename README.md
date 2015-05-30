@@ -9,5 +9,5 @@ The front end includes search funcationality where you may choose to depict twee
 To run, please construct an AWS Java web application following the same structure. You will also need to have your AWS and Twitter credentials declared in AwsCredentials.properties and twitter4j.properties respectively and save them under the src directory.
 
 For the format of the two properties, please refer to
-  Amazon AWS: http://docs.aws.amazon.com/AWSSdkDocsJava/latest/DeveloperGuide/credentials.html
-  Twitter4j: http://twitter4j.org/en/configuration.html
+  - Amazon AWS: http://docs.aws.amazon.com/AWSSdkDocsJava/latest/DeveloperGuide/credentials.html
+  - Twitter4j: http://twitter4j.org/en/configuration.html
