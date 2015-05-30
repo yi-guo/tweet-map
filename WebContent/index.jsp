@@ -82,8 +82,8 @@
                         <option value="vi">Vietnamese</option>
                         <option value="bn">Bengali</option>
                     </select>
-                    <input type="text" class="form-control" id="from" placeholder="From" onfocus="(this.type='date')" onblur="(this.type='text')">
-                    <input type="text" class="form-control" id="to" placeholder="To" onfocus="(this.type='date')" onblur="(this.type='text')">
+                    <input type="text" class="form-control" id="startDate" placeholder="Start Date" onfocus="(this.type='date')" onblur="(this.type='text')">
+                    <input type="text" class="form-control" id="endDate" placeholder="End Date" onfocus="(this.type='date')" onblur="(this.type='text')">
                 </div>
                 <button type="submit" class="btn btn-primary" id="input">Submit</button>
                 <div class="alert alert-danger" role="alert" id="alert">Invalid Dates</div>
@@ -134,8 +134,8 @@
                 console.log(new Date());
                 var keyword = document.getElementById("keyword").value;
                 var language = document.getElementById("language").value;
-                var startDate = document.getElementById("from").value;
-                var endDate = document.getElementById("to").value;
+                var startDate = document.getElementById("startDate").value;
+                var endDate = document.getElementById("endDate").value;
                 if (areValidDates(startDate, endDate)) {
                     document.getElementById("alert").style.display = "none";
                     var request = new XMLHttpRequest();
