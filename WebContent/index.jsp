@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
-<%@ page import="tweetstreamer.TweetStreamer" %>
+<%@ page import="tweetstreamer.TweetStreamer"%>
 
 <%
     // Start Twitter streamer upon running.
@@ -15,28 +15,10 @@
         <title>-- Now I See You, Twitters! --</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="styles/style.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-        <style type="text/css">
-            #map-canvas {
-                height: 600px;
-                width: 1100px;
-                margin-top: 120px;
-            }
-            #alert {
-                float: right;
-                margin-left: 30px;
-                height: 35px;
-                line-height: 3.5px;
-                display: none;
-            }
-            .footer {
-                bottom: 0;
-                width: 100%;
-                height: 60px;
-                margin-top: 60px;
-            }
-        </style>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=visualization"></script>
     </head>
     <body>
         <div class="container">
@@ -90,7 +72,6 @@
             </form>
             <div id="map-canvas"></div>
         </div>
-        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=visualization"></script>
         <script>
             var timer;
             var submit = document.getElementById("input");
@@ -166,7 +147,7 @@
             function initialize() {
                 var mapOptions = {
                     zoom: 2,
-                    center: new google.maps.LatLng(30.52, -34.34),
+                    center: new google.maps.LatLng(27.52, -34.34),
                     mapTypeId: google.maps.MapTypeId.SATELLITE
                 };
                 map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
@@ -178,7 +159,7 @@
         </script>
         <footer class="footer">
             <div class="container">
-                <p class="text-muted">Copyright Â© 2015 Yi Guo Programmed.</p>
+                <p class="text-muted">Copyright © 2015 Yi Guo Programmed.</p>
             </div>
         </footer>
     </body>

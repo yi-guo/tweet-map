@@ -1,0 +1,22 @@
+@CHARSET "UTF-8";
+
+#map-canvas {
+    height: 600px;
+    width: 1100px;
+    margin-top: 120px;
+}
+
+#alert {
+    float: right;
+    margin-left: 30px;
+    height: 35px;
+    line-height: 3.5px;
+    display: none;
+}
+
+.footer {
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    margin-top: 60px;
+}
